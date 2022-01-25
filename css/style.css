@@ -1,0 +1,668 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Raleway:wght@300;400;500;600;700;800&display=swap');
+
+/* All common css start */
+*{
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	box-sizing: border-box;
+}
+a,a:hover{
+	text-decoration: none;
+	display: inline-block;
+}
+img{
+	vertical-align: middle;
+}
+ul,ol{
+	list-style-type: none;
+}
+.container{
+	width: 1170px;
+	margin: 0 auto;
+}
+h1,h2,h3,h4,h5,h6,p{
+	padding: 0;
+	padding: 0;
+	line-height: 0.8;
+}
+/* All common css end */
+
+
+.navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999;
+}
+
+.navbar-nav .nav-link {
+	color: #fff;
+	margin-left: 15px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	transition: 0.4s;
+}
+.navbar-nav .nav-link:hover{
+	color: #c7b299;
+}
+
+.sticky_header{
+	animation: sticky .7s;
+	position: fixed;
+	background: #9c724e;
+	z-index: 999;
+}
+@keyframes sticky{
+	from{
+		top: -100px;
+	}
+	to{
+		top: 0;
+	}
+}
+
+
+/* ========== Banner part css start ================= */
+
+#banner{
+	background: url(../images/banner.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.banner-overlay{
+	padding: 380px 0;
+	background: rgba(17, 17, 17, 0.7);
+}
+.banner-text h3{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	font-size: 36px;
+	color: #fff;
+}
+
+
+.banner-text h1{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 800;
+	font-size: 52px;
+	color: #fff;
+	padding-top: 25px;
+	padding-bottom: 18px;
+}
+.banner-text p {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	color: #fff;
+	line-height: 24px;
+	padding-bottom: 50px;
+	padding: 0px 247px;
+}
+.banner-text a{
+	padding: 10px 20px;
+	border-bottom: 3px solid #998675;
+	background: #998675;
+	color: #fff;
+	text-transform: uppercase;
+	border-radius: 5px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 800;
+	font-size: 14px;
+}
+
+/* ================= service part css start ================= */
+
+#service{
+	padding: 80px 0;
+}
+service-text{
+	padding-bottom: 50px;
+}
+.service-icon i{
+	font-size: 30px;
+}
+.service-text h3{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+	font-size: 22px;
+	color: #555;
+	padding-top: 25px;
+	padding-bottom: 15px;
+	transition: 0.4s;
+}
+
+.service-text p{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 24px;
+}
+.service-text p::after{
+	position: absolute;
+	content: '';
+	width: 70px;
+	height: 3px;
+	bottom: -20px;
+	left: 50%;
+	transform: translateX(-50%);
+	background: #f1eee9;
+	transition: 0.4s;
+}
+.service-item:hover .service-icon i{
+	color: #c7b299;
+}
+.service-item:hover .service-text h3{
+	color: #c7b299;
+}
+.service-item:hover .service-text p::after{
+	background: #c7b299;
+}
+
+/* ============= idea part css start ============== */
+#idea{
+	padding-top: 80px;
+	background: #fbfaf8;
+}
+.idea-text h3{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+	font-size: 30px;
+	color: #555;
+}
+.idea-text p{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	color: #8c8c8c;
+	line-height: 24px;
+	padding-top: 20px;
+	padding-bottom: 40px;
+}
+
+/* ============= purchase part css start ================ */
+#purchase{
+	padding: 50px 0;
+	background: linear-gradient(to right, #211b19 , #4e3427);;
+}
+.purchase-text h3{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	font-size: 28px;
+	color: #fff;
+}
+.purchase-text span{
+	color: #c7b299;
+}
+.purchase-text p{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+	color: #615855;
+	padding-top: 5px;
+}
+.purchase-btn a{
+	padding: 10px 20px;
+	border-bottom: 3px solid #998675;
+	background: #998675;
+	color: #fff;
+	text-transform: uppercase;
+	border-radius: 5px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 800;
+	font-size: 14px;
+}
+
+/* ===================== Portfolio part css start ================ */
+#portfolio{
+	padding: 80px 0px;
+}
+.portfolio-btn button{
+	background: transparent;
+	padding: 10px 15px;
+	border: 1px solid #ebebeb;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	color: #8c8c8c;
+	border-radius: 5px;
+	transition: 0.4s;
+	margin-left: 7px;
+	cursor: pointer;
+}
+.portfolio-btn button:hover{
+	background: #998675;
+	color: #fff;
+}
+
+.portfolio-img{
+	position: relative;
+}
+.portfolio-overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	background: rgba(17, 17, 17, 0.7);
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.4s;
+}
+.portfolio-icon{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.portfolio-icon i{
+	font-size: 25px;
+	color: #c7b299;
+	padding-left: 20px;
+	cursor: pointer;
+}
+.portfolio-text{
+	position: relative;
+	padding: 30px;
+	background: #fbfaf8;
+}
+.shap {
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	background: #fbfaf8;
+	top: -13px;
+	left: 20px;
+	transform: rotate(45deg);
+}
+.portfolio-text h3{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+	color: #c7b299;
+}
+.portfolio-text p{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	color: #d1d1d1;
+}
+.portfolio-item:hover .portfolio-overlay{
+	visibility: visible;
+	opacity: 1;
+	width: 100%;
+}
+.portfolio-item:hover .portfolio-text{
+	background: #362f2d;
+}
+.portfolio-item:hover .portfolio-text h3{
+	color: #fff;
+}
+.portfolio-item:hover .portfolio-text p{
+	color: #c7b299;
+}
+.portfolio-item:hover .portfolio-text .shap{
+	background: #362f2d;
+}
+
+.port-btn button{
+	margin-top: 40px;
+	border-radius: 5px;
+	padding: 20px 45px;
+	background: #998675;
+	border: none;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 800;
+	font-size: 14px;
+	color: rgb(197, 197, 197);
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+/* ================= video part css start ================ */
+#video{
+	background: url(../images/video-bg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.video-overlay{
+	padding-top: 210px;
+	padding-bottom: 260px;
+	background: rgba(17, 17, 17, 0.6);
+}
+.video-icon img{
+	cursor: pointer;
+}
+.video-text h3{
+	padding-top: 40px;
+	padding-bottom: 20px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	font-size: 30px;
+	color: #fff;
+}
+.video-text p{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	color: #fff;
+	line-height: 28px;
+}
+
+/* ============= mobile part css start ======================== */
+/* #mobile{
+	background: #fbfaf8;
+} */
+.col-lg-5 img{
+	margin-top: 80px;
+}
+.mobile-text{
+	margin-top: 195px;
+}
+.mobile-text h3{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+	font-size: 30px;
+	color: #555555;
+}
+
+.mobile-text p{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	color: #8c8c8c;
+	line-height: 28px;
+	padding: 40px 0px;
+}
+.mobile-list{
+	margin-left: 50px;
+}
+.mobile-list ul li{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	color: #8c8c8c;
+	line-height: 28px;
+}
+.mobile-list ul li i{
+	font-size: 20px;
+}
+
+/* ==================== counter part start ===================== */
+#counter{
+	padding-top: 70px;
+	padding-bottom: 60px;
+	background: linear-gradient(to right, #211b19, #4e3427);
+}
+.couner-text h4{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 200;
+	font-size: 48px;
+	color: #fff;
+	padding-top: 25px;
+	padding-bottom: 15px;
+}
+.couner-text h5{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	color: #c7b299;
+	position: relative;
+}
+.couner-text h5::after{
+	position: absolute;
+	content: '';
+	bottom: -30px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 30px;
+	height: 2px;
+	background: #fff;
+}
+
+/* ================= blog part css start ================== */
+#blog{
+	padding: 80px 0px;
+}
+.blog-text h3{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+	font-size: 30px;
+	color: #555555;
+}
+.blog-text p{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	color: #8c8c8c;
+	line-height: 28px;
+	padding-top: 30px;
+	padding-bottom: 40px;
+}
+.blog-img{
+	position: relative;
+}
+.blog-overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(17, 17, 17, 0.7);
+	opacity: 0;
+	visibility: hidden;
+}
+.date .up{
+	padding: 5px 14px;
+	background: #363636;
+	text-align: center;
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	font-size: 24px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.date .down{
+	padding: 5px 14px;
+	background: #252525;
+	text-align: center;
+	color: #fff;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.date{
+	position: absolute;
+	top: 30px;
+	left: 30px;
+}
+.blog-item-text{
+	padding-top: 30px;
+	padding-left: 30px;
+	padding-bottom: 30px;
+}
+.blog-item-text h3{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+	color: #555555;
+}
+.blog-item-text p{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	color: #8c8c8c;
+	line-height: 22px;
+	padding-top: 10px;
+	padding-bottom: 15px;
+}
+.blog-item-text a{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	color: #c7b299;
+}
+.blog-item-text i{
+	margin-left: 7px;
+	vertical-align: middle;
+}
+.blog-item:hover .blog-overlay{
+	opacity: 1;
+	visibility: visible;
+}
+.blog-item:hover .date .up{
+	background: #c7b299;
+}
+.blog-item:hover .date .down{
+	background: #a48d72;
+}
+.blog-item:hover .blog-item-text{
+	background: #362f2d;
+}
+.blog-item:hover .blog-item-text h3{
+	color: #c7b299;
+}
+.blog-item:hover .blog-item-text p{
+	color: #fff;
+}
+
+/* ================ client part css start ================ */
+#client{
+	background: url(../images/client-bg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.client-overlay{
+	padding-top: 140px;
+	padding-bottom: 140px;
+	width: 100%;
+	height: 100%;
+	background: rgba(17, 17, 17, 0.7);
+}
+/*================== footer part css start ==================*/
+#footer{
+	padding-top: 107px;
+	padding-bottom: 85px;
+	background: #191919;
+}
+.footer-text p{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	color: #555555;
+	padding-top: 30px;
+	line-height: 24px;
+}
+.footer-text a{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	color: #d1d1d1;
+}
+.footer-text i{
+	vertical-align: middle;
+	color: white;
+	margin-left: 10px;
+}
+
+.common-footer-head h3{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	font-size: 24px;
+	color: #fff;
+}
+.footer-scnd-text h6{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	font-size: 12px;
+	color: #363636;
+	padding-top: 30px;
+}
+.footer-scnd-text p{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	color: #555555;
+	line-height: 20px;
+	border-bottom: 1px solid #252525;
+	padding-bottom: 20px;
+}
+
+.footer-scnd-text:hover h6{
+	color: #fff;
+}
+.footer-scnd-text:hover p{
+	color: #c7b299;
+}
+
+.footer-trd-text p{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	color: #555555;
+	line-height: 20px;
+	padding-top: 20px;
+}
+.footer-trd-text p span{
+	color: #00bff3;
+}
+.footer-trd-text h6{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	font-size: 12px;
+	color: #363636;
+	border-bottom: 1px solid #252525;
+	padding-bottom: 20px;
+}
+
+/*===================== copyright part css start===================== */
+#copyright{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background: #111111;
+}
+.cr-left p{
+	color: #555555;
+}
+.cr-left a{
+	color: #555555;
+}
+.cr-left a:hover{
+	color: #c7b299;
+}
+
+.cr-right p{
+	color: #555;
+}
+.cr-right a{
+	color: #555;
+}
+.cr-right a:hover{
+	color: #c7b299;
+}
+/* BAck to top */
+.back-to-top{
+	width: 50px;
+	height: 50px;
+	background: teal;
+	border-radius: 5px;
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+}
+.back-to-top i{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 30px;
+	color: #fff;
+}
